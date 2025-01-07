@@ -79,7 +79,6 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Copyright Section */}
         <div className="mt-12  justify-between flex pt-8 border-t text-center text-gray-500">
         <img
               src="/logos.png"

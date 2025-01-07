@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Quote } from 'lucide-react'
 import { useState } from 'react'
 import { Button } from "@/components/ui/button"
 
@@ -35,18 +34,26 @@ export function Testimonial() {
   }
 
   return (
-    <section className="container mx-auto px-4 md:px-6 py-6 md:py-12 flex justify-center">
-      <Card className="bg-zinc-900 text-white max-w-3xl w-full">
-        <CardContent className="p-12 text-center space-y-6">
-          <Quote className="w-12 h-12 mx-auto text-purple-400" />
+    <section className="w-full px-4 md:px-16 py-6 md:py-12 flex justify-center">
+      <Card className="text-black w-full">
+        <CardContent className="p-6 md:p-12 text-center space-y-6">
+          <img className="mx-auto mb-6" src="/Lightbox.png" alt="Logo" />
+
           <blockquote className="text-2xl font-medium">
             "{testimonials[index].quote}"
           </blockquote>
-          <div>
-            <p className="font-semibold">{testimonials[index].name}</p>
+
+          <div className="flex flex-col items-center space-y-3">
+            <img
+              className="w-16 h-16 rounded-full object-cover mx-auto"
+              src="/profile.png"
+              alt="Profile"
+            />
+            <p className="font-semibold text-black">{testimonials[index].name}</p>
             <p className="text-sm text-gray-400">{testimonials[index].position}</p>
           </div>
-          <div className="flex justify-center  text-black gap-4">
+
+          <div className="flex justify-center text-black gap-4 mt-6">
             <Button variant="outline" onClick={prevTestimonial}>
               Previous
             </Button>

@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { LatestPosts } from "./components/Posts";
 import Price from "./components/Price";
+import Question from "./components/Question";
 import { Testimonial } from "./components/Testimonial";
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <Features />
       <Testimonial />
       <Faq />
+      <Question />
       <LatestPosts /> 
       <Price />
       <Footer />
